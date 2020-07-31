@@ -22,6 +22,7 @@ function removeLoadingSpinner() {
 // Get Quote From API
 async function getQuote() {
     showLoadingSpinner();
+    // Need a proxy url to sort out issues fetching from the free API
     const proxyUrl = 'https://hidden-beyond-29808.herokuapp.com/';
     const apiUrl = 'http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
     try {
